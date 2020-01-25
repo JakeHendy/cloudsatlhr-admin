@@ -1,0 +1,5 @@
+{
+    "AppSyncApiName": "cloudsatlhradmin",
+    "DynamoDBBillingMode": "PAY_PER_REQUEST",
+    "DynamoDBEnableServerSideEncryption": "false"
+}

@@ -1,0 +1,26 @@
+{
+	"api": {
+		"cloudsatlhradmin": {
+			"service": "AppSync",
+			"providerPlugin": "awscloudformation",
+			"output": {
+				"authConfig": {
+					"additionalAuthenticationProviders": [],
+					"defaultAuthentication": {
+						"authenticationType": "API_KEY",
+						"apiKeyConfig": {
+							"description": "Jake MBP Test",
+							"apiKeyExpirationDays": "180"
+						}
+					}
+				}
+			}
+		}
+	},
+	"hosting": {
+		"S3AndCloudFront": {
+			"service": "S3AndCloudFront",
+			"providerPlugin": "awscloudformation"
+		}
+	}
+}

@@ -1,0 +1,15 @@
+{
+    "test": {
+        "awscloudformation": {
+            "AuthRoleName": "amplify-cloudsatlhr-admin-test-215955-authRole",
+            "UnauthRoleArn": "arn:aws:iam::649766597883:role/amplify-cloudsatlhr-admin-test-215955-unauthRole",
+            "AuthRoleArn": "arn:aws:iam::649766597883:role/amplify-cloudsatlhr-admin-test-215955-authRole",
+            "Region": "eu-west-2",
+            "DeploymentBucketName": "amplify-cloudsatlhr-admin-test-215955-deployment",
+            "UnauthRoleName": "amplify-cloudsatlhr-admin-test-215955-unauthRole",
+            "StackName": "amplify-cloudsatlhr-admin-test-215955",
+            "StackId": "arn:aws:cloudformation:eu-west-2:649766597883:stack/amplify-cloudsatlhr-admin-test-215955/05e74480-3fbe-11ea-a9c1-0ab07291f102",
+            "AmplifyAppId": "d3ak91j1vmqs7a"
+        }
+    }
+}
