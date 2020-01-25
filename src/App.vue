@@ -1,5 +1,6 @@
 <template>
   <div id="app">
+    <amplify-authenticator v-bind:authConfig="authConfig"></amplify-authenticator>
     <button @click="createNewTodo">Add Todo</button>
     <ul>
       <li v-for="todo in todos" :key="todo.id">
@@ -21,6 +22,9 @@ import { onCreateTodo } from './graphql/subscriptions'
 // other imports
 import { listTodos } from './graphql/queries'
 
+import { components } from 'aws-amplify-vue'
+
+
 export default {
   name: 'app',
   data(){
@@ -28,7 +32,7 @@ export default {
       todos: []
     }
   },
-  methods :{
+  methods: {
     async createNewTodo(){ 
       const todo = { name: "Use AppSync" , description: "Realtime and Offline"}
       await API.graphql(graphqlOperation(createTodo, { input: todo }))
@@ -49,6 +53,9 @@ export default {
   created(){
     this.getData()
     this.subscribe()
+  },
+  components: { 
+    ...components
   }
 };
 
